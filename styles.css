@@ -1,0 +1,224 @@
+body {
+  background: url("https://images.unsplash.com/photo-1605158080227-fd61e78bdc8b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  font-family: 'Rubik', sans-serif;
+}
+
+::-moz-selection {
+  color: white;
+  background: skyblue;
+}
+
+::selection {
+  color: white;
+  background: skyblue;
+}
+
+#weather-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 50%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  #weather-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 120px;
+  }
+}
+
+.weather-container, .weather-container2 {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background-color: #ffffff33;
+  color: #222;
+  border-radius: 10px;
+  padding: 30px;
+  min-width: 200px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 0px #222;
+          box-shadow: 0px 0px 0px #222;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.weather-container:hover, .weather-container2:hover {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  cursor: pointer;
+  background-color: #ffffff93;
+  -webkit-box-shadow: 10px 10px 0px #16272e;
+          box-shadow: 10px 10px 0px #16272e;
+}
+
+.weather-container:hover > h2, .weather-container2:hover > h2 {
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #16272e;
+}
+
+@media screen and (max-width: 600px) {
+  .weather-container, .weather-container2 {
+    margin: 50px auto;
+    width: 300px;
+    position: relative;
+    right: 30px;
+  }
+}
+
+h1 {
+  font-size: 40px;
+  color: #222;
+}
+
+h2 {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+h3 {
+  font-weight: lighter;
+  color: #3b3b3b;
+}
+
+.weather-container img,
+.weather-container2 img {
+  height: 100px;
+}
+
+.weather-container p,
+.weather-container2 p {
+  font-size: 30px;
+}
+
+#random-facts {
+  position: relative;
+  padding: 45px;
+  font-size: 25px;
+  border-radius: 10px;
+  color: #222;
+  width: 50%;
+  margin: 30px auto;
+  background-color: #ffffff81;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  -webkit-box-shadow: 10px 10px 0px #16272e;
+          box-shadow: 10px 10px 0px #16272e;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  #random-facts {
+    width: 70%;
+  }
+}
+
+.refresh-btn {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background: #222;
+  color: #fff;
+  padding: 0.7rem 3.7rem;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  letter-spacing: 5px;
+  display: block;
+}
+
+.refresh-btn:hover {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background: #4b4a4a;
+  cursor: pointer;
+}
+
+.cat-pic {
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  height: 300px;
+  z-index: -1;
+}
+
+.dog-pics {
+  height: 275px;
+  margin: 0 auto;
+  border: 8px solid white;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .dog-pics {
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.dog-pic {
+  position: absolute;
+  height: 750px;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.joke-setup {
+  color: #252525;
+  font-size: 20px;
+  font-size: bolder;
+}
+
+.joke-punchline {
+  color: #222;
+  font-size: 35px;
+}
+
+.joke-img {
+  height: 150px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+}
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+  height: 400px;
+  width: 100%;
+  border: solid 4px white;
+  border-radius: 10px;
+}
+
+#map-container {
+  padding: 20px;
+  background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80");
+  background-size: cover;
+}
+/*# sourceMappingURL=styles.css.map */

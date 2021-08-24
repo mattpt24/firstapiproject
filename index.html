@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Matt's API Project</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+         <!-- FONT -->
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;900&display=swap" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <center>
+        <h1>Using API's 🌞</h1>
+        <h3>This is going to be my first project that implements an <strong>Open Source API</strong></h3>
+        <h3>(Refresh to update)</h3>
+       </center>
+        
+
+
+       <section id="weather-container">
+       <div class="weather-container">
+           <h2>London, UK</h2>
+           <img class="icon" alt="Image Of Weather Conditions">
+           <p class="weather-data"></p>
+           <p class="weather-temp"></p>
+           <p class="number-of-clouds"></p>
+       </div>
+
+       <div class="weather-container2">
+        <h2>San Antonio, USA</h2>
+        <img class="icon2" alt="Image Of Weather Conditions">
+        <p class="weather-data2"></p>
+        <p class="weather-temp2"></p>
+        <p class="number-of-clouds2"></p>
+    </div>
+    </section>
+        
+
+    <section id="random-facts">
+        <h1>Random Cat Facts API</h1>
+        <p  style="width: 75%" class="cat-fact"></p>
+        <img class="cat-pic" src="new-cat.png" alt="">
+        <button class="refresh-btn" onClick="window.location.reload();">NEXT FACT</button>
+    </section>
+
+
+
+    
+    <section id="random-facts">
+        <center>
+            <img  class="dog-pic" src="dog-pic.png" alt="">
+        <h1>Random Dog Pics API</h1>
+        <img class="dog-pics">
+        <button class="refresh-btn" onClick="window.location.reload();">NEXT IMAGE</button>
+        </center>
+    </section>
+    
+    <section id="random-facts">
+        <center>
+            <img class="joke-img" src="laugh.png" alt="">
+            <h1>Random Joke API</h1>
+            <i><p class="joke-setup"></p></i>
+            <p class="joke-punchline"></p>
+        <button class="refresh-btn" onClick="window.location.reload();">NEXT JOKE</button>
+        </center>
+    </section> 
+
+    <center>
+    <section id="map-container">
+    <h1 style="color: white">Google Maps API</h1>
+    <div id="map"></div>
+     </section>
+    </center>
+
+
+    <center>
+        <section id="random-facts">
+        <h1>Random Activity API</h1>
+        <p class="something-to-do"></p>
+        <button class="refresh-btn" onClick="window.location.reload();">VIEW  NEXT</button>
+    </section>
+    </center>
+        
+    
+
+
+
+
+
+
+        <!-- Google Maps API -->
+        <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBvgpJgkmT0HsanPQvHzAn6a5ZqQH7DOY&callback=initMap">
+        </script>
+      
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        
+        <!-- Javascript file -->
+        <script src="index.js" async defer></script>
+    </body>
+</html>
